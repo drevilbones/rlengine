@@ -1,0 +1,15 @@
+#include "InputHandler.h"
+
+InputHandler::InputHandler() {
+    //ctor
+}
+
+InputHandler::~InputHandler() {
+    //dtor
+}
+
+void InputHandler::handle() {
+    while (SDL_PollEvent(event)) {
+        
+    }
+}

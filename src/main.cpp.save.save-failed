@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <Game.h>
+#include <Renderer.h>
+#include <InputHandler.h>
+
+int main(int argc, char* argv[]) {
+
+    Game* theGame = new Game;
+    Renderer theRenderer;
+    InputHandler theHandler(theGame);
+
+    while (theGame->stillRunning()) {
+        theHandler.handle();
+        theGame.update();
+               
+    }
+
+    return 0;
+}
