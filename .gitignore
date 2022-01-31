@@ -45,3 +45,6 @@ obj/
 *.save-failed
 *.temp
 *.save-failed.xml
+
+# eric helper script
+setNonworkGitVar
